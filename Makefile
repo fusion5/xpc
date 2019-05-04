@@ -1,2 +1,4 @@
 build:
-	gcc main.c mpc.c -o xpc
+	gcc -g main.c mpc.c -o xpc
+
+

@@ -1,11 +1,21 @@
-#include "stdio.h"
+type arr a = (a + a)
+type arr a = a
+type arr a = ((a))
 
-main() {
+u64_fact(u08_n) {
+    u64_r = 1;
+    u08_i = 1;
+    while (u08_i < u08_n) {
+        u64_r = u64_r * u08_i;
+        u08_i = u08_i + 1;
+    }
+    return u64 r;
+}
 
-  int i;
-  int j;
-
-  j = 10;
-  
-  return 0;
+u08_main() {
+    u08_sndlen;
+    s_b_snd;
+    s_b_rcv;
+    u64_res = u64_fact(5);
+    print(u64_res);
 }
