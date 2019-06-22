@@ -38,6 +38,10 @@ data ABinOp
   | Divide
   deriving (Show)
 
+data Definition 
+  = TypeDef String   -- Type name
+            [TyVars] -- Type parameters
+
 data Stmt
   = Seq [Stmt]
   | Assign String AExpr
@@ -45,6 +49,8 @@ data Stmt
   | While BExpr Stmt
   | Skip
   deriving (Show)
+
+data Module = Module [Definition]
 
 type Parser = Parsec Void String
 
